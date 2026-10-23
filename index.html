@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Natural Glow & Shine — thoughtfully made soap for everyday care.">
+<title>Natural Glow & Shine | Botanical Soap</title>
+<style>
+:root{--forest:#173d32;--sage:#718b70;--cream:#faf7f0;--gold:#c7a56a;--ink:#24332c;--muted:#68766e;--line:#e8e3d8;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+header{height:76px;padding:0 6%;display:flex;align-items:center;justify-content:space-between;background:var(--forest);color:#fff;position:sticky;top:0;z-index:10}
+.brand{font-family:Georgia,serif;font-size:1.2rem;letter-spacing:.02em;font-weight:bold}.brand small{display:block;font:10px Arial,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#d9e2d8;margin-top:5px}
+nav{display:flex;gap:24px;align-items:center}nav a{color:#fff;text-decoration:none;font-size:.85rem;letter-spacing:.04em}nav a:hover{color:#e0c99e}.cart{border:1px solid #ffffff70;border-radius:30px;padding:9px 13px;background:transparent;color:#fff;cursor:pointer}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:35px;padding:68px 8%;background:linear-gradient(120deg,#f2eee3,#e4eadf)}
+.kicker{text-transform:uppercase;letter-spacing:.22em;font-size:.72rem;font-weight:bold;color:#7b6946}.hero h1{font:clamp(2.6rem,5vw,4.7rem)/1.05 Georgia,serif;color:var(--forest);margin:18px 0}.hero p{max-width:490px;line-height:1.8;color:#5c6a60}.button{display:inline-block;border:0;border-radius:2px;padding:14px 20px;text-decoration:none;font-weight:bold;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;cursor:pointer}.primary{background:var(--forest);color:white}.secondary{border:1px solid #9ba99a;color:var(--forest);background:transparent;margin-left:8px}.hero-art{min-height:290px;display:grid;place-items:center;border:1px solid #d7d5c7;background:radial-gradient(circle at 50% 45%,#fffaf0,#dce5d6);font-size:8rem;position:relative}.hero-art:after{content:"BOTANICAL CARE";position:absolute;bottom:18px;letter-spacing:.3em;font-size:.65rem;color:#6c7c6b}
+main{max-width:1120px;margin:auto;padding:58px 6% 70px}.section-head{text-align:center;margin-bottom:28px}.section-head .kicker{margin-bottom:10px}.section-head h2{font:2.4rem Georgia,serif;color:var(--forest);margin:0 0 10px}.section-head p{color:var(--muted);font-size:.9rem;line-height:1.6}
+.products{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.card{background:#fff;border:1px solid var(--line);transition:transform .2s,box-shadow .2s}.card:hover{transform:translateY(-4px);box-shadow:0 12px 28px #183c3212}.product-art{height:185px;display:grid;place-items:center;font-size:4.5rem;background:linear-gradient(145deg,#f0e3cf,#e3e9dc)}.card:nth-child(2) .product-art{background:linear-gradient(145deg,#e8d8d3,#f4ebdf)}.card:nth-child(3) .product-art{background:linear-gradient(145deg,#dce8d7,#f5eedc)}.card-body{padding:20px}.card h3{font:1.25rem Georgia,serif;color:var(--forest);margin:0 0 9px}.card p{font-size:.87rem;color:var(--muted);line-height:1.6;min-height:42px;margin:0 0 18px}.price-row{display:flex;align-items:center;justify-content:space-between;gap:8px}.price{font-weight:bold;color:var(--forest);font-size:1.1rem}.add{background:#f6f3eb;color:var(--forest);border:1px solid #d9dfd4;padding:10px 12px;cursor:pointer;font-weight:bold}
+.layout{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:44px;align-items:start}.panel{background:white;border:1px solid var(--line);padding:25px}.panel h2{font:1.55rem Georgia,serif;color:var(--forest);margin:0 0 15px}.muted{color:var(--muted);font-size:.88rem;line-height:1.7}#cart-items{padding:0;margin:0;list-style:none}#cart-items li{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid #eeeae2;font-size:.9rem}.qty{display:flex;align-items:center;gap:7px;white-space:nowrap}.qty button{width:26px;height:26px;border:1px solid var(--line);background:#faf8f2;cursor:pointer}.total{display:flex;justify-content:space-between;font-weight:bold;font-size:1.08rem;margin:18px 0}
+form{display:grid;gap:14px}label{display:block;font-size:.8rem;font-weight:bold;margin-bottom:6px;color:#415448}input,textarea{width:100%;padding:12px;border:1px solid #d8ded5;background:#fff;font:inherit;border-radius:0}textarea{min-height:82px;resize:vertical}.notice{background:#f7f1e4;border-left:3px solid var(--gold);padding:12px;font-size:.82rem;line-height:1.6;color:#6a5a3f;margin-top:14px}
+footer{background:var(--forest);color:#e6ece6;padding:30px 6%;font-size:.82rem;line-height:1.8;text-align:center}footer strong{font:1.2rem Georgia,serif}
+@media(max-width:700px){header{height:auto;min-height:70px;padding:14px 5%;gap:12px}.brand{font-size:1rem}nav{gap:12px}nav a{font-size:.75rem}.hero{grid-template-columns:1fr;padding:42px 6%;gap:25px}.hero-art{min-height:190px;font-size:6rem}.products{grid-template-columns:repeat(2,minmax(0,1fr))}.product-art{height:135px}.layout{grid-template-columns:1fr}main{padding:42px 5% 55px}}
+@media(max-width:420px){.products{grid-template-columns:1fr}.product-art{height:150px}.brand small{font-size:8px}nav{gap:8px}.hero h1{font-size:2.65rem}.secondary{margin:9px 0 0}}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">Natural Glow & Shine<small>Botanical Everyday Care</small></div>
+  <nav><a href="#products">SHOP</a><a href="#order">ORDER</a><button class="cart" onclick="document.querySelector('#cart').scrollIntoView({behavior:'smooth'})">BAG (<span id="cart-count">0</span>)</button></nav>
+</header>
+<section class="hero">
+  <div><div class="kicker">Simple rituals. Natural feel.</div><h1>Care that feels<br>closer to nature.</h1><p>Explore our botanical-inspired soap collection, created to bring a little everyday freshness to your routine.</p><a class="button primary" href="#products">Explore the collection</a><a class="button secondary" href="#order">Order now</a></div>
+  <div class="hero-art" aria-label="Botanical soap illustration">🧼🌿</div>
+</section>
+<main>
+  <section id="products">
+    <div class="section-head"><div class="kicker">The collection</div><h2>Everyday Soap Essentials</h2><p>Demo products and sample prices. Update the details to match your actual products before publishing.</p></div>
+    <div class="products" id="product-grid"></div>
+  </section>
+  <section class="layout">
+    <div class="panel" id="cart"><h2>Your Shopping Bag</h2><ul id="cart-items"><li class="muted">Your bag is empty.</li></ul><div class="total"><span>Total</span><span id="cart-total">₹0</span></div><button class="button secondary" onclick="clearCart()">Clear bag</button></div>
+    <div class="panel" id="order"><h2>Order Details</h2><p class="muted">Fill in your details to prepare an order message in WhatsApp. This demo does not collect payment.</p>
+      <form id="order-form">
+        <div><label for="customer-name">FULL NAME *</label><input id="customer-name" name="name" required maxlength="80" autocomplete="name" placeholder="Enter your name"></div>
+        <div><label for="customer-phone">MOBILE NUMBER *</label><input id="customer-phone" name="phone" required inputmode="tel" autocomplete="tel" pattern="[0-9+() -]{10,18}" placeholder="Your phone number"></div>
+        <div><label for="customer-address">DELIVERY ADDRESS *</label><textarea id="customer-address" name="address" required maxlength="500" autocomplete="street-address" placeholder="House number, street, city and PIN code"></textarea></div>
+        <button class="button primary" type="submit">Prepare WhatsApp Order</button>
+      </form>
+      <div class="notice">Setup needed: replace <b>91XXXXXXXXXX</b> in the code with your WhatsApp number, including India's country code 91 and without spaces or symbols.</div>
+    </div>
+  </section>
+</main>
+<footer><strong>Natural Glow & Shine</strong><br>Thoughtful care for everyday rituals.<br>Demo store: product details and prices are examples. This site is not yet live and has no real payment gateway or order database.</footer>
+<script>
+const WHATSAPP_NUMBER = "91XXXXXXXXXX";
+const products = [
+ {id:1,name:"Rose Soap",desc:"A rose-inspired fragrance for your daily bathing ritual.",price:99,emoji:"🌹🧼"},
+ {id:2,name:"Neem Soap",desc:"A fresh, botanical-inspired addition to your routine.",price:79,emoji:"🌿🧼"},
+ {id:3,name:"Aloe Vera Soap",desc:"A clean, nature-inspired choice for everyday care.",price:89,emoji:"🌱🧼"}
+];
+let cart = {};
+const money = n => "₹" + n;
+function renderProducts(){document.querySelector("#product-grid").innerHTML=products.map(p=>`<article class="card"><div class="product-art">${p.emoji}</div><div class="card-body"><h3>${p.name}</h3><p>${p.desc}</p><div class="price-row"><span class="price">${money(p.price)}</span><button class="add" onclick="addToCart(${p.id})">+ Add to bag</button></div></div></article>`).join("")}
+function addToCart(id){cart[id]=(cart[id]||0)+1;renderCart()}
+function changeQty(id,delta){cart[id]=(cart[id]||0)+delta;if(cart[id]<=0)delete cart[id];renderCart()}
+function clearCart(){cart={};renderCart()}
+function renderCart(){const entries=Object.entries(cart);document.querySelector("#cart-count").textContent=entries.reduce((s,[,q])=>s+q,0);document.querySelector("#cart-items").innerHTML=entries.length?entries.map(([id,q])=>{const p=products.find(x=>x.id===Number(id));return `<li><span>${p.name} × ${q}<br><b>${money(p.price*q)}</b></span><span class="qty"><button type="button" onclick="changeQty(${id},-1)">−</button>${q}<button type="button" onclick="changeQty(${id},1)">+</button></span></li>`}).join(""):'<li class="muted">Your bag is empty.</li>';document.querySelector("#cart-total").textContent=money(entries.reduce((s,[id,q])=>s+products.find(p=>p.id===Number(id)).price*q,0))}
+document.querySelector("#order-form").addEventListener("submit",e=>{e.preventDefault();if(!Object.keys(cart).length){alert("Please add at least one product to your bag.");return}if(WHATSAPP_NUMBER.includes("X")){alert("Store setup needed: add your WhatsApp number in the HTML code first.");return}const f=new FormData(e.target);const lines=Object.entries(cart).map(([id,q])=>{const p=products.find(x=>x.id===Number(id));return `${p.name} x ${q} = ${money(p.price*q)}`});const total=Object.entries(cart).reduce((s,[id,q])=>s+products.find(p=>p.id===Number(id)).price*q,0);const msg=`Hello Natural Glow & Shine!%0AOrder request:%0A${encodeURIComponent(lines.join("\n"))}%0AEstimated total: ${money(total)}%0AName: ${encodeURIComponent(f.get("name"))}%0APhone: ${encodeURIComponent(f.get("phone"))}%0AAddress: ${encodeURIComponent(f.get("address"))}`;window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`,"_blank")});
+renderProducts();renderCart();
+</script>
+</body>
+</html>
